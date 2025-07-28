@@ -1,7 +1,7 @@
 {
   "name": "velora-frontend",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -9,10 +9,17 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "axios": "^1.11.0",
     "expo": "~53.0.20",
+    "expo-linear-gradient": "^14.1.5",
+    "expo-router": "^5.1.4",
+    "expo-secure-store": "^14.2.3",
     "expo-status-bar": "~2.2.3",
+    "lucide-react-native": "^0.525.0",
     "react": "19.0.0",
-    "react-native": "0.79.5"
+    "react-native": "0.79.5",
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
