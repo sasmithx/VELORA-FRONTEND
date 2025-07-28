@@ -93,7 +93,7 @@ export default function ProfileScreen() {
 
                 <SettingItem title="Account" fadeAnim={fadeAnim} slideAnim={slideAnim}>
                     <SettingsItemBtn
-                        icon={<LogOut size={20} color="#EF4444"/>}
+                        icon={<LogOut size={20} color="#EF4444" />}
                         title="Sign Out"
                         onPress={handleSignOut}
                         showBorder={false}

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {View, Text, TextInput, TouchableOpacity} from 'react-native';
-import {Lock, Eye, EyeOff} from 'lucide-react-native';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { Lock, Eye, EyeOff } from 'lucide-react-native';
 
 interface PasswordInputProps {
     password: string;
@@ -8,12 +8,12 @@ interface PasswordInputProps {
     passwordError: string;
 }
 
-const PasswordInput: React.FC<PasswordInputProps> = ({password, setPassword, passwordError}) => {
+const PasswordInput: React.FC<PasswordInputProps> = ({ password, setPassword, passwordError }) => {
     const [showPassword, setShowPassword] = useState(false);
     return (
         <View>
             <View className="flex-row items-center border-b border-gray-700 py-3">
-                <Lock size={20} color="#A78BFA"/>
+                <Lock size={20} color="#A78BFA" />
                 <TextInput
                     className="flex-1 text-white text-base ml-2"
                     placeholder="Password"
@@ -25,9 +25,9 @@ const PasswordInput: React.FC<PasswordInputProps> = ({password, setPassword, pas
                 />
                 <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
                     {showPassword ? (
-                        <EyeOff size={20} color="#6B7280"/>
+                        <EyeOff size={20} color="#6B7280" />
                     ) : (
-                        <Eye size={20} color="#6B7280"/>
+                        <Eye size={20} color="#6B7280" />
                     )}
                 </TouchableOpacity>
             </View>

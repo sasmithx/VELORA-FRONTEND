@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text, TextInput} from 'react-native';
-import {User} from 'lucide-react-native';
+import { View, Text, TextInput } from 'react-native';
+import { User } from 'lucide-react-native';
 
 interface NameInputProps {
     username: string;
@@ -8,11 +8,11 @@ interface NameInputProps {
     nameError: string;
 }
 
-const NameInput: React.FC<NameInputProps> = ({username, setUsername, nameError}) => {
+const NameInput: React.FC<NameInputProps> = ({ username, setUsername, nameError }) => {
     return (
         <View>
             <View className="flex-row items-center border-b border-gray-700 py-3">
-                <User size={20} color="#A78BFA"/>
+                <User size={20} color="#A78BFA" />
                 <TextInput
                     className="flex-1 text-white text-base ml-2"
                     placeholder="Full Name"

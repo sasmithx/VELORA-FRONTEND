@@ -39,7 +39,7 @@ export default function BookmarksScreen() {
     };
 
     const handleBookmark = (news: News, index: number) => {
-        dispatch(deleteNews({userId: Number(user.id), newsId: news.id!, index: `bookmark-${index}`}));
+        dispatch(deleteNews({ userId: Number(user.id), newsId: news.id!, index: `bookmark-${index}` }));
     };
 
     return (
@@ -75,10 +75,8 @@ export default function BookmarksScreen() {
                         articles={bookmarkedArticles}
                         loadingMore={false}
                         refreshing={false}
-                        onRefresh={() => {
-                        }}
-                        onLoadMore={() => {
-                        }}
+                        onRefresh={() => {}}
+                        onLoadMore={() => {}}
                         onArticlePress={goToArticleDetail}
                         onBookmarkToggle={handleBookmark}
                         scrollToTopTrigger={false}

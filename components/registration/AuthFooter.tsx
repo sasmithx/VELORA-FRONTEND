@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
-import {Link} from 'expo-router';
+import { View, Text, TouchableOpacity } from 'react-native';
+import { Link } from 'expo-router';
 
 interface AuthFooterProps {
     message: string;
@@ -8,7 +8,7 @@ interface AuthFooterProps {
     linkHref: string;
 }
 
-const AuthFooter: React.FC<AuthFooterProps> = ({message, linkText, linkHref}) => {
+const AuthFooter: React.FC<AuthFooterProps> = ({ message, linkText, linkHref }) => {
     return (
         <View className="flex-row justify-center mt-12">
             <Text className="text-gray-400">{message} </Text>
