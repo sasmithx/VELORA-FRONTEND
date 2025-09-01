@@ -17,8 +17,8 @@ const ActionButton: React.FC<ActionButtonProps> = ({
     <TouchableOpacity
       onPress={onPress}
       disabled={disabled}
-      className={`rounded-xl py-4 mt-6 ${
-        disabled ? "bg-gray-400" : "bg-primary"
+      className={`rounded-xl py-4 mt-6 shadow-medium ${
+        disabled ? "bg-secondary-400" : "bg-primary shadow-glow"
       }`}
     >
       <View className="flex-row items-center justify-center">
